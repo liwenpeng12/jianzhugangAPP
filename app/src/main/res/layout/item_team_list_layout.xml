@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/white">
+
+    <View
+        style="@style/LineStyle"
+        android:background="#e2e2e2" />
+
+    <ImageView
+        android:id="@+id/iv_heard"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/logo"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/iv_heard"
+        android:textColor="@color/text_333333"
+        android:textSize="@dimen/text_16sp" />
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:drawableLeft="@mipmap/content_icon_star1"
+        android:drawablePadding="4dp"
+        android:minWidth="30dp"
+        android:textColor="@color/text_a5a5a5"
+        android:textSize="@dimen/text_12sp" />
+
+</RelativeLayout>

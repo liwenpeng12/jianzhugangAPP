@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="122dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/d_select_role_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="2017/01/01 22:22"
+            android:textColor="@color/color_63b5f6"
+            android:textSize="@dimen/text_14sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tv_time">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_msg_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="4dp"
+                    android:singleLine="true"
+                    android:text="系统通知"
+                    android:textColor="@color/text_333333"
+                    android:textSize="@dimen/text_16sp" />
+
+                <ImageView
+                    android:id="@+id/iv_unread"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:visibility="gone"
+                    android:src="@mipmap/icon_unread_red" />
+            </FrameLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        style="@style/LineStyle"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="2dp" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:ellipsize="end"
+        android:lineSpacingExtra="5dp"
+        android:maxLines="2"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="14dp"
+        android:text="通知内容通知内容通知内容通知内容通知内容通知内容..."
+        android:textColor="@color/text_a5a5a5"
+        android:textSize="@dimen/text_16sp" />
+</LinearLayout>

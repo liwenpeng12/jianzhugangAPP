@@ -1,0 +1,536 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f2f2f2"
+    android:orientation="vertical"
+    tools:context="com.jlkg.jzg.jzg_android.personal.MyUserFragment">
+
+    <com.jlkg.jzg.jzg_android.weidget.MyToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.jlkg.jzg.jzg_android.weidget.MyToolbar>
+
+
+    <LinearLayout
+        android:id="@+id/ll_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/user_bg"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="@dimen/dimen_82"
+                android:layout_height="@dimen/dimen_82"
+                android:layout_marginLeft="@dimen/dimen_27"
+                android:background="@drawable/shape_picture_bg">
+
+
+                <com.jlkg.jzg.jzg_android.other.widget.CircleImageView
+                    android:id="@+id/img_default"
+                    android:layout_width="@dimen/dimen_76"
+                    android:layout_height="@dimen/dimen_76"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/content_icon_group" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_11"
+                android:drawableRight="@mipmap/content_icon_more3"
+                android:text="登录／注册"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_18sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_userInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/user_bg"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+
+        <RelativeLayout
+            android:layout_width="@dimen/dimen_82"
+            android:layout_height="@dimen/dimen_82"
+            android:layout_marginLeft="@dimen/dimen_27"
+            android:background="@drawable/shape_picture_bg">
+
+
+            <com.jlkg.jzg.jzg_android.other.widget.CircleImageView
+                android:id="@+id/img_picture"
+                android:layout_width="@dimen/dimen_76"
+                android:layout_height="@dimen/dimen_76"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/content_icon_group" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_user"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dimen_5"
+            android:layout_marginRight="@dimen/dimen_11"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gavin Wang"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_18sp" />
+
+            <TextView
+                android:id="@+id/tv_company"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:drawableRight="@mipmap/content_icon_more3"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_66ffffff"
+                android:textSize="@dimen/text_14sp" />
+
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_18"
+                android:layout_marginTop="@dimen/dimen_9"
+                android:background="@color/color_66ffffff"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dimen_9"
+                android:paddingRight="@dimen/dimen_9"
+                android:text="未认证"
+                android:textColor="@color/color_085489"
+                android:textSize="@dimen/text_11sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:background="@drawable/shape_white_radiu_4dp"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/dimen_11">
+
+                <LinearLayout
+                    android:id="@+id/ll_recruit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_15"
+                    android:paddingRight="@dimen/dimen_15">
+
+                    <com.jlkg.jzg.jzg_android.other.widget.CircleImageView
+                        android:layout_width="@dimen/dimen_30"
+                        android:layout_height="@dimen/dimen_30"
+                        android:src="@mipmap/mine_icon_job" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_15"
+                        android:drawableRight="@mipmap/content_icon_more"
+                        android:text="我的招工"
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/text_15sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1"
+                    android:layout_marginTop="@dimen/dimen_9"
+                    android:background="@color/color_e2e2e2" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_wallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_9"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_15"
+                    android:paddingRight="@dimen/dimen_15">
+
+                    <com.jlkg.jzg.jzg_android.other.widget.CircleImageView
+                        android:layout_width="@dimen/dimen_30"
+                        android:layout_height="@dimen/dimen_30"
+                        android:src="@mipmap/mine_icon_wallet" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_15"
+                        android:drawableRight="@mipmap/content_icon_more"
+                        android:text="我的钱包"
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/text_15sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1"
+                    android:layout_marginTop="@dimen/dimen_9"
+                    android:background="@color/color_e2e2e2" />
+
+                <LinearLayout
+                    android:id="@+id/ll_organization"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_9"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_15"
+                    android:paddingRight="@dimen/dimen_15">
+
+                    <com.jlkg.jzg.jzg_android.other.widget.CircleImageView
+                        android:layout_width="@dimen/dimen_30"
+                        android:layout_height="@dimen/dimen_30"
+                        android:src="@mipmap/mine_icon_group" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_15"
+                        android:drawableRight="@mipmap/content_icon_more"
+                        android:text="添加项目"
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/text_15sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_class"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_9"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_15"
+                    android:paddingRight="@dimen/dimen_15"
+                    android:visibility="gone">
+
+                    <com.jlkg.jzg.jzg_android.other.widget.CircleImageView
+                        android:layout_width="@dimen/dimen_30"
+                        android:layout_height="@dimen/dimen_30"
+                        android:src="@mipmap/mine_icon_group" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_15"
+                        android:drawableRight="@mipmap/content_icon_more"
+                        android:text="班组成员"
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/text_15sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1"
+                    android:layout_marginTop="@dimen/dimen_9"
+                    android:background="@color/color_e2e2e2" />
+
+                <LinearLayout
+                    android:layout_marginBottom="@dimen/dimen_9"
+                    android:id="@+id/ll_machinery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_9"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_15"
+                    android:paddingRight="@dimen/dimen_15">
+
+                    <com.jlkg.jzg.jzg_android.other.widget.CircleImageView
+                        android:layout_width="@dimen/dimen_30"
+                        android:layout_height="@dimen/dimen_30"
+                        android:src="@mipmap/mine_icon_rent" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_15"
+                        android:drawableRight="@mipmap/content_icon_more"
+                        android:text="机械招租"
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/text_15sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view_line_jixie"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1"
+
+                    android:background="@color/color_e2e2e2" />
+
+                <LinearLayout
+
+                    android:id="@+id/ll_project"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_9"
+                    android:layout_marginTop="@dimen/dimen_9"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_15"
+                    android:paddingRight="@dimen/dimen_15">
+
+                    <com.jlkg.jzg.jzg_android.other.widget.CircleImageView
+                        android:layout_width="@dimen/dimen_30"
+                        android:layout_height="@dimen/dimen_30"
+                        android:src="@mipmap/mine_icon_project" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_15"
+                        android:drawableRight="@mipmap/content_icon_more"
+                        android:text="项目申请"
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/text_15sp" />
+
+                </LinearLayout>
+                <View
+                    android:id="@+id/view_ling_guowang"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1"
+                    android:background="@color/color_e2e2e2" />
+
+                <LinearLayout
+                    android:id="@+id/ll_my_apply"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_9"
+                    android:layout_marginTop="@dimen/dimen_9"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:paddingLeft="@dimen/dimen_15"
+                    android:paddingRight="@dimen/dimen_15">
+
+                    <com.jlkg.jzg.jzg_android.other.widget.CircleImageView
+                        android:layout_width="@dimen/dimen_30"
+                        android:layout_height="@dimen/dimen_30"
+                        android:src="@mipmap/mine_icon_project" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_15"
+                        android:drawableRight="@mipmap/content_icon_more"
+                        android:text="我的项目"
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/text_15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_add_project"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_9"
+                    android:layout_marginTop="@dimen/dimen_9"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_15"
+                    android:paddingRight="@dimen/dimen_15">
+
+                    <com.jlkg.jzg.jzg_android.other.widget.CircleImageView
+                        android:layout_width="@dimen/dimen_30"
+                        android:layout_height="@dimen/dimen_30"
+                        android:src="@mipmap/mine_icon_group" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_15"
+                        android:drawableRight="@mipmap/content_icon_more"
+                        android:text="组织架构"
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/text_15sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_hisProject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_9"
+                    android:layout_marginTop="@dimen/dimen_9"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_15"
+                    android:paddingRight="@dimen/dimen_15"
+                    android:visibility="gone">
+
+                    <com.jlkg.jzg.jzg_android.other.widget.CircleImageView
+                        android:layout_width="@dimen/dimen_30"
+                        android:layout_height="@dimen/dimen_30"
+                        android:src="@mipmap/mine_icon_project" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_15"
+                        android:drawableRight="@mipmap/content_icon_more"
+                        android:text="过往项目"
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/text_15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_evaluate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_1"
+                        android:background="@color/color_e2e2e2" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_9"
+                        android:layout_marginTop="@dimen/dimen_9"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/dimen_15"
+                        android:paddingRight="@dimen/dimen_15"
+                        android:visibility="visible">
+
+                        <com.jlkg.jzg.jzg_android.other.widget.CircleImageView
+                            android:layout_width="@dimen/dimen_30"
+                            android:layout_height="@dimen/dimen_30"
+                            android:src="@mipmap/mine_icon_rank" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_15"
+                            android:drawableRight="@mipmap/content_icon_more"
+                            android:text="甲方评价"
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/text_15sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_15"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:background="@drawable/shape_white_radiu_4dp"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/dimen_11">
+
+                <LinearLayout
+                    android:id="@+id/ll_change"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_15"
+                    android:paddingRight="@dimen/dimen_15">
+
+                    <com.jlkg.jzg.jzg_android.other.widget.CircleImageView
+                        android:layout_width="@dimen/dimen_30"
+                        android:layout_height="@dimen/dimen_30"
+                        android:src="@mipmap/mine_icon_change" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_15"
+                        android:drawableRight="@mipmap/content_icon_more"
+                        android:text="切换角色"
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/text_15sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1"
+                    android:layout_marginTop="@dimen/dimen_9"
+                    android:background="@color/color_e2e2e2" />
+
+                <LinearLayout
+                    android:id="@+id/ll_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_11"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_15"
+                    android:paddingRight="@dimen/dimen_15">
+
+                    <com.jlkg.jzg.jzg_android.other.widget.CircleImageView
+                        android:layout_width="@dimen/dimen_30"
+                        android:layout_height="@dimen/dimen_30"
+                        android:src="@mipmap/mine_icon_setting" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_15"
+                        android:drawableRight="@mipmap/content_icon_more"
+                        android:text="系统设置"
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/text_15sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

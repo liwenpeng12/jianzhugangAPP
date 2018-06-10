@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dimen_5"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:padding="@dimen/dimen_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_item"
+        android:orientation="vertical"
+        android:background="@drawable/shape_white_4_grey">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_16sp"
+                android:textColor="@color/color_333333"
+                android:text="项目"/>
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/content_icon_more"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/dimen_13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/dimen_13"
+                android:layout_height="@dimen/dimen_14"
+                android:src="@mipmap/content_icon_person"/>
+            <TextView
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_14sp"
+                android:textColor="@color/color_888888"
+                android:text="公\u3000\u3000司:"/>
+            <TextView
+                android:id="@+id/tv_company"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="公司"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="@dimen/text_14sp"
+                android:textColor="@color/color_888888"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/dimen_13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/dimen_13"
+                android:layout_height="@dimen/dimen_14"
+                android:src="@mipmap/content_icon_time"/>
+            <TextView
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_14sp"
+                android:textColor="@color/color_888888"
+                android:text="申请时间:"/>
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0000/00/00"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="@dimen/text_14sp"
+                android:textColor="@color/color_888888"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

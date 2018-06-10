@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jlkg.jzg.jzg_android.contract.ContractFragment">
+
+    <com.jlkg.jzg.jzg_android.weidget.MyToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="合约" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:tabIndicatorColor="@color/text_blue"
+        app:tabSelectedTextColor="@color/text_blue"
+        app:tabTextColor="@color/text_333333" />
+
+    <View
+        style="@style/LineStyle"
+        android:background="#d7d7d7" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:id="@+id/fl_noLogin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="您还没有登录，请先登录！"
+            android:textColor="@color/text_333333"
+            android:textSize="@dimen/text_16sp" />
+    </FrameLayout>
+
+</LinearLayout>

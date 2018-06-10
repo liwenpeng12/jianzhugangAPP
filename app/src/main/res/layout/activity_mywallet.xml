@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_f2f2f2"
+    tools:context="com.jlkg.jzg.jzg_android.personal.activity.MywalletActivity">
+
+    <com.jlkg.jzg.jzg_android.weidget.MyToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="我的钱包"
+        app:leftImg="@mipmap/nav_icon_back">
+    </com.jlkg.jzg.jzg_android.weidget.MyToolbar>
+
+    <LinearLayout
+        android:id="@+id/ll_wallet"
+        android:layout_margin="@dimen/dimen_10"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_white_4_grey"
+        android:paddingLeft="@dimen/dimen_15"
+        android:paddingRight="@dimen/dimen_15"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_tradingRecord"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_60"
+            android:orientation="horizontal">
+        <com.jlkg.jzg.jzg_android.other.widget.CircleImageView
+            android:layout_width="@dimen/dimen_30"
+            android:layout_height="@dimen/dimen_30"
+            android:src="@mipmap/content_icon_record"/>
+
+        <TextView
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_15sp"
+            android:textColor="@color/color_333333"
+            android:text="交易记录"
+            android:drawableRight="@mipmap/content_icon_more"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1"
+            android:background="@color/color_e2e2e2"/>
+
+
+        <LinearLayout
+            android:id="@+id/ll_balance"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_60"
+            android:orientation="horizontal">
+            <com.jlkg.jzg.jzg_android.other.widget.CircleImageView
+                android:layout_width="@dimen/dimen_30"
+                android:layout_height="@dimen/dimen_30"
+                android:src="@mipmap/mine_icon_wallet"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_15sp"
+                android:textColor="@color/color_333333"
+                android:text="余额"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_16sp"
+                android:textColor="@color/color_ff4b4b"
+                android:text="￥0"
+                android:drawablePadding="@dimen/dimen_10"
+                android:drawableRight="@mipmap/content_icon_more"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1"
+            android:background="@color/color_e2e2e2"/>
+
+
+        <LinearLayout
+            android:id="@+id/ll_blanCard"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_60"
+            android:orientation="horizontal">
+            <com.jlkg.jzg.jzg_android.other.widget.CircleImageView
+                android:layout_width="@dimen/dimen_30"
+                android:layout_height="@dimen/dimen_30"
+                android:src="@mipmap/content_icon_card"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_15sp"
+                android:textColor="@color/color_333333"
+                android:text="银行卡"/>
+
+
+
+            <TextView
+                android:id="@+id/tv_bindCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_16sp"
+                android:textColor="@color/color_039aff"
+                android:text="未绑定"
+                android:drawablePadding="@dimen/dimen_10"
+                android:drawableRight="@mipmap/content_icon_more"/>
+        </LinearLayout>
+
+
+</LinearLayout>
+</LinearLayout>

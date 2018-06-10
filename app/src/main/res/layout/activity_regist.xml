@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jlkg.jzg.jzg_android.other.RegistActivity">
+
+    <com.jlkg.jzg.jzg_android.weidget.MyToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftImg="@mipmap/nav_icon_back"
+        app:titleText="注册" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@mipmap/logo" />
+
+            <TextView
+                android:id="@+id/tv_user_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="5dp"
+                android:text="建筑港-建筑业互联网服务终端，打造建筑\n行业互联网第一平台"
+                android:textColor="@color/text_9b9b9b"
+                android:textSize="@dimen/text_14sp"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/d_radius_grey_kuang"
+            android:drawableLeft="@mipmap/login_icon_phone"
+            android:drawablePadding="10dp"
+            android:hint="输入手机号"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            android:lines="1"
+            android:maxLength="11"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textColor="@color/text_333333"
+            android:textColorHint="@color/text_a5a5a5"
+            android:textSize="@dimen/text_16sp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/d_radius_grey_kuang">
+
+            <Button
+                android:id="@+id/btn_code"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/transparent"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="获取验证码"
+                android:textColor="@color/text_blue_color"
+                android:textSize="@dimen/text_16sp" />
+
+            <EditText
+                android:id="@+id/et_code"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/btn_code"
+                android:background="@android:color/transparent"
+                android:digits="1234567890"
+                android:drawableLeft="@mipmap/login_icon_code"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:hint="验证码"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLength="4"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="@color/text_333333"
+                android:textColorHint="@color/text_a5a5a5"
+                android:textSize="@dimen/text_16sp" />
+        </RelativeLayout>
+
+
+        <EditText
+            android:layout_marginTop="@dimen/dimen_15"
+            android:id="@+id/et_psw"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/d_radius_grey_kuang"
+            android:drawableLeft="@mipmap/login_icon_password"
+            android:drawablePadding="10dp"
+            android:hint="设置密码"
+
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:maxLength="18"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textColor="@color/text_333333"
+            android:textColorHint="@color/text_a5a5a5"
+            android:textSize="@dimen/text_16sp" />
+        <EditText
+            android:layout_marginTop="@dimen/dimen_15"
+            android:id="@+id/et_pswConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/d_radius_grey_kuang"
+            android:drawableLeft="@mipmap/login_icon_password"
+            android:drawablePadding="10dp"
+            android:hint="再次输入密码"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:maxLength="18"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textColor="@color/text_333333"
+            android:textColorHint="@color/text_a5a5a5"
+            android:textSize="@dimen/text_16sp" />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/d_button_bg"
+            android:enabled="false"
+            android:text="下一步"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_16sp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/tv_have_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:text="我已有账号"
+                android:textColor="@color/text_blue"
+                android:textSize="@dimen/text_14sp" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_xieyi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/d_rb_button"
+                android:checked="true"
+                android:paddingLeft="5dp"
+                android:text="同意"
+                android:textColor="@color/text_333333"
+                android:textSize="@dimen/text_14sp" />
+
+            <TextView
+                android:id="@+id/tv_xieyi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="《建筑港用户协议》"
+                android:textColor="@color/text_blue"
+                android:textSize="@dimen/text_14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

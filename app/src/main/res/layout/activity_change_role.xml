@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jlkg.jzg.jzg_android.personal.activity.ChangeRoleActivity">
+
+    <com.jlkg.jzg.jzg_android.weidget.MyToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="选择角色"
+        app:leftImg="@mipmap/nav_icon_back"></com.jlkg.jzg.jzg_android.weidget.MyToolbar>
+
+    <RelativeLayout
+        android:id="@+id/rl_company"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/d_select_role_bg">
+
+        <FrameLayout
+            android:id="@+id/fl_enterprise"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:drawableTop="@mipmap/content_icon_company1"
+                android:text="企业认证"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/text_16sp" />
+
+            <ImageView
+                android:id="@+id/iv_company_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:src="@mipmap/icon_choose_red1"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_company"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_below="@+id/fl_enterprise"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_18sp"
+            android:textColor="@color/color_039aff"/>
+
+        <ImageView
+            android:id="@+id/img_company_approve"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_below="@+id/tv_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/unverified"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_class"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/d_select_role_bg">
+
+        <FrameLayout
+            android:id="@+id/fl_class"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:drawableTop="@mipmap/content_icon_group1"
+                android:text="班组认证"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/text_16sp" />
+
+            <ImageView
+                android:id="@+id/img_class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:src="@mipmap/icon_choose_red1"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_class_name"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_below="@+id/fl_class"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_18sp"
+            android:textColor="@color/color_039aff"/>
+
+        <ImageView
+            android:id="@+id/img_class_approve"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_below="@+id/tv_class_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/unverified"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

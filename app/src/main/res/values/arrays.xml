@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="companyType">
+        <item>建筑公司</item>
+        <item>劳务公司</item>
+        <item>监理公司</item>
+        <item>设计公司</item>
+        <item>勘察公司</item>
+        <item>审图公司</item>
+        <item>造价咨询</item>
+        <item>招标代理</item>
+        <item>检测机构</item>
+        <item>装饰公司</item>
+    </string-array>
+    <string-array name="teamType_1">
+        <item>瓦工班 </item>
+        <item>木工班</item>
+        <item>钢筋班</item>
+        <item>混凝土班</item>
+        <item>油漆班</item>
+        <item>防水班</item>
+        <item>装饰装修班</item>
+        <item>机械设备班</item>
+        <item>架子班</item>
+        <item>外架租赁</item>
+        <item>铝模班</item>
+        <item>普工班</item>
+        <item>铝合金班</item>
+        <item>石方爆破班</item>
+        <item>古建筑装饰班</item>
+        <item>园林绿化班</item>
+        <item>地基基础班</item>
+        <item>爆破班</item>
+    </string-array>
+    <string-array name="teamType_2">
+        <item> 电气设备班给排水班</item>
+        <item> 消防安装班</item>
+        <item> 通风空调班</item>
+        <item> 弱电安装班</item>
+        <item> 燃气安装班</item>
+        <item> 电梯安装班</item>
+        <item> 钢结构安装班</item>
+        <item> 幕墙安装班</item>
+        <item> 塔吊安拆</item>
+        <item> 水电班</item>
+    </string-array>
+    <string-array name="teamType_3">
+        <item>塔吊司机</item>
+        <item>塔吊指挥</item>
+        <item>吊车司机</item>
+        <item>司索工</item>
+        <item>电焊工</item>
+        <item>保安</item>
+        <item>后勤</item>
+        <item>劳务部</item>
+        <item>电梯司机</item>
+        <item>挖掘机司机</item>
+        <item>专业分包</item>
+        <item>电工</item>
+        <item>厨师</item>
+        <item>破桩头</item>
+        <item>施工班组长</item>
+        <item>喷锚工</item>
+        <item>滚笼机工</item>
+        <item>泥头车</item>
+        <item>铁路维护施工队</item>
+        <item>安装钳工</item>
+        <item>铲车司机</item>
+        <item>仓库管理</item>
+        <item>保洁员</item>
+        <item>旋挖机司机</item>
+        <item>电梯维修员</item>
+        <item>压路机司机</item>
+    </string-array>
+    <string-array name="jiXieTypes">
+        <item>土石方系列</item>
+        <item>路面机械</item>
+        <item>起重机系列</item>
+        <item>混凝土系列</item>
+        <item>动力设备</item>
+        <item>市政机械</item>
+        <item>桩工桥梁机械</item>
+        <item>破碎设备</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="scorStrings">
+        <item>全部</item>
+        <item>5星</item>
+        <item>4星</item>
+        <item>3星</item>
+        <item>2星</item>
+        <item>1星</item>
+    </string-array>
+</resources>

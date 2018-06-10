@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jlkg.jzg.jzg_android.other.XieyiActivity">
+
+    <com.jlkg.jzg.jzg_android.weidget.MyToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftImg="@mipmap/nav_icon_back"
+        app:titleText="服务协议" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="30dp"
+                android:lineSpacingExtra="5dp"
+                android:text="尊敬的用户，握友欢迎您注册成为本网站用户。在注册前请您仔细阅读如下服务条款："
+                android:textColor="@color/text_blue"
+                android:textSize="@dimen/text_16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="5dp"
+                android:text="用户协议（简称本协议），包括隐私政策及未来可能发生的修订内容，是您（终端用户）和上海青橙实业有限公司（简称青橙）之间关于青橙网站w.qingcheng.com，简称本网站)与青橙产品、程序及务相关事项最终的、完整的且排他的协议，取代、合并之前的当事人之间关于上述事项的讨论和协议，并将对您使用本网站与青橙产品、程序及服务的行为产生法律约束力。您已承诺和保证有权利和能力订立本协议，请您认真阅读本协议中各条款，包括免除和限制青橙责任的免责条款和对用户的权利的限制 （未成年人审阅时应由法定监护人陪同）。您使用本网站与青橙产品、程序及服务的行为将视为您已经接受本协议，如果您不能接受本协议中的全部条款，请勿使用本网站或青橙产品。
+
+1．用户使用规
+1.1 帐您无需用户帐号即可浏览本网站。但某些网
+站功能青橙产品、程序和服务需要您注册青橙帐
+号。"
+                android:textColor="@color/text_333333"
+                android:textSize="@dimen/text_16sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

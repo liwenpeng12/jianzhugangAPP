@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:padding="20dip" >
+
+    <LinearLayout
+        android:background="@drawable/dialog_shap"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:textColor="#222222"
+            android:textSize="18sp"
+            android:id="@+id/title_2"
+            android:layout_width="fill_parent"
+            android:layout_height="65.0dip"
+            android:gravity="center"
+            android:text="你最多只能选9张图片"
+            android:visibility="visible" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="#CCCCCC" />
+       <!-- <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+            <TextView
+                android:textColor="#222222"
+                android:text="你最多只能选9张图片"
+                android:id="@+id/message"
+                android:textSize="18sp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lineSpacingMultiplier="1.5"
+                android:minHeight="65.0dip"
+                />
+        </LinearLayout>-->
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="#CCCCCC" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:textColor="#0099ff"
+                android:background="@drawable/btn_dialog_selector_lift"
+                android:textSize="18sp"
+                android:layout_weight="1"
+                android:id="@+id/negativeButton"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:text="我知道了" />
+           <!-- <View
+                android:layout_width="1.0px"
+                android:layout_height="match_parent"
+                android:background="#CCCCCC" />
+            <TextView
+                android:background="@drawable/btn_dialog_selector_lift"
+                android:textSize="18sp"
+                android:layout_weight="1"
+                android:id="@+id/positiveButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="2" />-->
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

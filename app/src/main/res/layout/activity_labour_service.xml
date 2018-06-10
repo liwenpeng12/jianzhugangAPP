@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_f2f2f2"
+    tools:context="com.jlkg.jzg.jzg_android.personal.activity.LabourServiceActivity">
+
+
+    <com.jlkg.jzg.jzg_android.weidget.MyToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="项目部"
+        android:id="@+id/my_toolbar"
+        app:leftImg="@mipmap/nav_icon_back">
+    </com.jlkg.jzg.jzg_android.weidget.MyToolbar>
+
+    <!--<LinearLayout-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_margin="@dimen/dimen_10">-->
+
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/smart_refresh"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/dimen_15"
+            android:paddingRight="@dimen/dimen_15">
+
+            <com.scwang.smartrefresh.layout.header.ClassicsHeader
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+            </com.scwang.smartrefresh.layout.header.ClassicsHeader>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_2"
+                android:paddingBottom="@dimen/dimen_2"
+                android:paddingLeft="@dimen/dimen_1"
+                android:paddingRight="@dimen/dimen_1"
+                android:id="@+id/list_content">
+            </android.support.v7.widget.RecyclerView>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tv_hint"
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="no more message"
+            android:textColor="@color/color_1f1f1f"
+            android:textSize="@dimen/text_18sp"/>
+    <!--</LinearLayout>-->
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:text="+添加子公司"
+        android:gravity="center"
+        android:textSize="@dimen/text_20sp"
+        android:textColor="@color/white"
+        android:id="@+id/tv_addLabour"
+        android:visibility="gone"
+        android:background="@drawable/shape_them_bg">
+
+    </TextView>
+
+</LinearLayout>

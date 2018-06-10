@@ -1,0 +1,177 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jlkg.jzg.jzg_android.home.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.jlkg.jzg.jzg_android.weidget.MyToolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:rightImg="@mipmap/nav_icon_msg2"
+            app:titleText="首页" />
+
+        <com.youth.banner.Banner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            app:image_scale_type="fit_xy"
+            android:layout_height="134dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/d_select_role_bg"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/fl_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawablePadding="6dp"
+                    android:drawableTop="@mipmap/content_icon_fabu1"
+                    android:gravity="center_horizontal"
+                    android:text="发布招工"
+                    android:textColor="@color/text_575757"
+                    android:textSize="@dimen/text_16sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawablePadding="6dp"
+                    android:drawableTop="@mipmap/content_icon_zhaogong1"
+                    android:gravity="center_horizontal"
+                    android:text="项目招工"
+                    android:textColor="@color/text_575757"
+                    android:textSize="@dimen/text_16sp" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="2"
+            android:background="@drawable/d_select_role_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/fl_3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawablePadding="6dp"
+                        android:drawableTop="@mipmap/content_icon_company1"
+                        android:gravity="center_horizontal"
+                        android:text="公司"
+                        android:textColor="@color/text_575757"
+                        android:textSize="@dimen/text_16sp" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/fl_4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_line">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawablePadding="6dp"
+                        android:drawableTop="@mipmap/content_icon_group1"
+                        android:gravity="center_horizontal"
+                        android:text="班组"
+                        android:textColor="@color/text_575757"
+                        android:textSize="@dimen/text_16sp" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <View
+                style="@style/LineStyle"
+                android:background="#efefef" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/fl_5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawablePadding="6dp"
+                        android:drawableTop="@mipmap/content_icon_store1"
+                        android:gravity="center_horizontal"
+                        android:text="商城"
+                        android:textColor="@color/text_575757"
+                        android:textSize="@dimen/text_16sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/fl_6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_line2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawablePadding="6dp"
+                        android:drawableTop="@mipmap/content_icon_machine1"
+                        android:gravity="center_horizontal"
+                        android:text="机械"
+                        android:textColor="@color/text_575757"
+                        android:textSize="@dimen/text_16sp" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

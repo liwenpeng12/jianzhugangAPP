@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50">
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:text="取消"
+            android:textSize="@dimen/text_14sp"
+            android:textColor="@color/color_a5a5a5"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@+id/tv_title"
+            android:textSize="@dimen/text_16sp"
+            android:textColor="@color/color_1f1f1f"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/tv_choose"
+            android:paddingRight="15dp"
+            android:paddingLeft="@dimen/dimen_15"
+            android:layout_alignParentRight="true"
+            android:text="确定"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_14sp"
+            android:textColor="@color/color_039aff"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+</LinearLayout>

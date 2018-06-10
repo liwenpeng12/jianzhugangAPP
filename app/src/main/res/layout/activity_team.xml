@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jlkg.jzg.jzg_android.personal.activity.TeamActivity">
+
+    <com.jlkg.jzg.jzg_android.weidget.MyToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="xx劳务公司"
+        android:id="@+id/my_toolbar"
+        app:leftImg="@mipmap/nav_icon_back">
+    </com.jlkg.jzg.jzg_android.weidget.MyToolbar>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/smart_refresh"
+        android:layout_weight="1"
+        android:visibility="visible">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </com.scwang.smartrefresh.layout.header.ClassicsHeader>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_1"
+            android:paddingRight="@dimen/dimen_1"
+            android:paddingBottom="@dimen/dimen_2"
+            android:paddingTop="@dimen/dimen_2"
+            android:layout_margin="@dimen/dimen_10"
+            android:id="@+id/list_content">
+        </android.support.v7.widget.RecyclerView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/tv_hint"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="no more message"
+        android:textColor="@color/color_1f1f1f"
+        android:textSize="@dimen/text_18sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:text="+添加子公司"
+        android:gravity="center"
+        android:textSize="@dimen/text_20sp"
+        android:textColor="@color/white"
+        android:id="@+id/tv_addLabour"
+        android:background="@drawable/shape_them_bg">
+
+    </TextView>
+</LinearLayout>

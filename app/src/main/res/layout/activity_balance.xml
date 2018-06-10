@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jlkg.jzg.jzg_android.personal.activity.BalanceActivity">
+
+    <com.jlkg.jzg.jzg_android.weidget.MyToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftImg="@mipmap/nav_icon_back"
+        app:titleText="余额">
+    </com.jlkg.jzg.jzg_android.weidget.MyToolbar>
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_margin="@dimen/dimen_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_enable_bg_4dp"
+        android:orientation="vertical">
+
+
+
+        <com.jlkg.jzg.jzg_android.other.widget.CircleImageView
+            android:layout_centerInParent="true"
+            android:layout_width="@dimen/dimen_60"
+            android:layout_height="@dimen/dimen_60"
+            android:id="@+id/img_picture"
+            android:layout_marginTop="@dimen/dimen_35"
+            android:src="@mipmap/content_icon_balance"/>
+
+
+        <TextView
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的余额"
+            android:textSize="@dimen/text_16sp"
+            android:textColor="#88ffffff"/>
+
+
+        <LinearLayout
+            android:layout_marginBottom="@dimen/dimen_35"
+            android:layout_marginTop="@dimen/dimen_17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="￥"/>
+
+            <TextView
+                android:textSize="@dimen/text_20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="0"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

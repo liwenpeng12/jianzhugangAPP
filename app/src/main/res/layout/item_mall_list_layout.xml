@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="4dp"
+    android:background="@drawable/d_select_role_bg"
+    android:orientation="vertical"
+    android:padding="3.5dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_item"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/iv_heard"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/logo" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/iv_heard"
+            android:singleLine="true"
+            android:textColor="@color/text_333333"
+            android:textSize="@dimen/text_16sp" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/iv_heard"
+            android:drawableLeft="@mipmap/content_icon_address2"
+            android:drawablePadding="6dp"
+            android:singleLine="true"
+            android:textColor="@color/text_a5a5a5"
+            android:textSize="@dimen/text_14sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line"
+        style="@style/LineStyle"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:background="@drawable/blue_to_c8c8c8"
+        android:gravity="center"
+        android:text="钢筋班"
+        android:textColor="@color/white_to_565656"
+        android:textSize="@dimen/text_15sp" />
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dimen_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_white_4_grey"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_item"
+        android:paddingRight="@dimen/dimen_15"
+        android:paddingLeft="@dimen/dimen_15"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_80"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/text_15sp"
+            android:text="深圳xxxx劳务派遣有限公司"/>
+
+        <ImageView
+            android:id="@+id/img_details"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_15"
+            android:src="@mipmap/content_icon_more4"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1"
+        android:background="@color/color_e2e2e2"/>
+
+        <LinearLayout
+            android:layout_marginRight="@dimen/dimen_1"
+            android:layout_marginLeft="@dimen/dimen_1"
+            android:layout_marginBottom="@dimen/dimen_1"
+            android:background="@drawable/shape_bottom_f4f9fd_4dp"
+            android:gravity="right|center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:id="@+id/tv_dispatch"
+                android:layout_width="@dimen/dimen_80"
+                android:layout_height="@dimen/dimen_35"
+                android:background="@drawable/shape_blue_4dp"
+                android:textSize="@dimen/text_15sp"
+                android:textColor="@color/white"
+                android:text="调度中心"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

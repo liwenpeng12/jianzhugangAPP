@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:melove="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    melove:showIn="@layout/activity_evaluate_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:paddingLeft="@dimen/dimen_15"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_30"
+        android:background="#efefef"
+        android:text="甲方评价"
+        android:textSize="@dimen/text_14sp"
+        android:gravity="center_vertical"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:paddingLeft="@dimen/dimen_15"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="工程进度"
+                android:textSize="@dimen/text_14sp"
+                android:textColor="@color/color_a5a5a5" />
+
+
+            <RatingBar
+                android:visibility="visible"
+                android:layout_marginLeft="@dimen/dimen_80"
+                android:id="@+id/rating_schedule"
+                style="@style/RatingBar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:max="5"
+                android:numStars="5"
+                android:stepSize="1" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0.5"
+            android:background="#efefef" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:paddingLeft="@dimen/dimen_15"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="工程质量"
+                android:textSize="@dimen/text_14sp"
+                android:textColor="@color/color_a5a5a5" />
+
+            <RatingBar
+                android:layout_marginLeft="@dimen/dimen_80"
+                android:id="@+id/rating_quality"
+                style="@style/RatingBar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:max="5"
+                android:numStars="5"
+                android:stepSize="1" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0.5"
+            android:background="#efefef" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:paddingLeft="@dimen/dimen_15"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="安全生产"
+                android:textSize="@dimen/text_14sp"
+                android:textColor="@color/color_a5a5a5" />
+
+            <RatingBar
+                android:layout_marginLeft="@dimen/dimen_80"
+                android:id="@+id/rating_safety"
+                style="@style/RatingBar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:max="5"
+                android:numStars="5"
+                android:stepSize="1" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0.5"
+            android:background="#efefef" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:paddingLeft="@dimen/dimen_15"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="合作诚信"
+                android:textSize="@dimen/text_14sp"
+                android:textColor="@color/color_a5a5a5" />
+
+            <RatingBar
+                android:layout_marginLeft="@dimen/dimen_80"
+                android:id="@+id/rating_integrity"
+                style="@style/RatingBar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:max="5"
+                android:numStars="5"
+                android:stepSize="1" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0.5"
+            android:background="#efefef" />
+
+    </LinearLayout>
+
+    <TextView
+        android:paddingLeft="@dimen/dimen_15"
+        android:paddingBottom="@dimen/dimen_10"
+        android:background="#efefef"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:text="评价内容"
+        android:textSize="@dimen/text_14sp"
+        android:textColor="@color/black"
+        android:gravity="bottom" />
+
+</LinearLayout>

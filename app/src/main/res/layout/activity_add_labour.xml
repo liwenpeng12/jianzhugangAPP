@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jlkg.jzg.jzg_android.personal.activity.AddLabourActivity">
+
+    <com.jlkg.jzg.jzg_android.weidget.MyToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="添加劳务公司"
+        app:leftImg="@mipmap/nav_icon_back"
+        android:id="@+id/my_toolbar">
+    </com.jlkg.jzg.jzg_android.weidget.MyToolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_margin="@dimen/dimen_10"
+        android:paddingLeft="@dimen/dimen_15"
+        android:paddingRight="@dimen/dimen_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/shape_white_4_grey">
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dimen_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_49"
+            android:orientation="horizontal">
+
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="公司名称："
+                android:textSize="@dimen/text_15sp"
+                android:textColor="@color/text_575757" />
+
+            <EditText
+                android:textCursorDrawable="@drawable/shape_cursor_bg"
+                android:maxLength="16"
+                android:id="@+id/edt_companyName"
+                android:gravity="center_vertical"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:textSize="@dimen/text_15sp"
+                android:textColor="@color/color_039aff"
+                android:hint="请输入公司名称"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1"
+            android:background="@color/color_e2e2e2"/>
+
+        <LinearLayout
+            android:layout_marginBottom="@dimen/dimen_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_49"
+            android:orientation="horizontal">
+
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="公司类型："
+                android:textSize="@dimen/text_15sp"
+                android:textColor="@color/text_575757" />
+
+            <TextView
+                android:textCursorDrawable="@drawable/shape_cursor_bg"
+                android:maxLength="11"
+                android:id="@+id/tv_companyType"
+                android:gravity="center_vertical"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:textSize="@dimen/text_15sp"
+                android:inputType="number"
+                android:textColor="@color/color_6ace89"
+                android:hint="请选择公司类型"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1"
+            android:background="@color/color_e2e2e2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_49"
+            android:orientation="horizontal">
+
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="用户名："
+                android:textSize="@dimen/text_15sp"
+                android:textColor="@color/text_575757" />
+
+            <EditText
+                android:textCursorDrawable="@drawable/shape_cursor_bg"
+                android:maxLength="16"
+                android:id="@+id/edt_userName"
+                android:gravity="center_vertical"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:textSize="@dimen/text_15sp"
+                android:textColor="@color/color_333333"
+                android:hint="请输入用户名"/>
+        </LinearLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1"
+            android:background="@color/color_e2e2e2"/>
+
+        <LinearLayout
+            android:layout_marginBottom="@dimen/dimen_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_49"
+            android:orientation="horizontal">
+
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="密码："
+                android:textSize="@dimen/text_15sp"
+                android:textColor="@color/text_575757" />
+
+            <EditText
+                android:textCursorDrawable="@drawable/shape_cursor_bg"
+                android:maxLength="18"
+                android:id="@+id/edt_psw"
+                android:inputType="textPassword"
+                android:gravity="center_vertical"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:textSize="@dimen/text_15sp"
+                android:textColor="@color/color_333333"
+                android:hint="密码(非必填，默认123456)"/>
+        </LinearLayout>
+
+        <View
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1"
+            android:background="@color/color_e2e2e2"/>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_49"
+            android:orientation="horizontal">
+
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="联系人："
+                android:textSize="@dimen/text_15sp"
+                android:textColor="@color/text_575757" />
+
+            <EditText
+                android:textCursorDrawable="@drawable/shape_cursor_bg"
+                android:maxLength="16"
+                android:id="@+id/edt_name"
+                android:gravity="center_vertical"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:textSize="@dimen/text_15sp"
+                android:textColor="@color/color_333333"
+                android:hint="请输入联系人"/>
+        </LinearLayout>
+
+        <View
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1"
+            android:background="@color/color_e2e2e2"/>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginBottom="@dimen/dimen_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_49"
+            android:orientation="horizontal">
+
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="联系电话："
+                android:textSize="@dimen/text_15sp"
+                android:textColor="@color/text_575757" />
+
+            <EditText
+                android:textCursorDrawable="@drawable/shape_cursor_bg"
+
+                android:maxLength="11"
+                android:id="@+id/edt_phone"
+                android:gravity="center_vertical"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:textSize="@dimen/text_15sp"
+                android:inputType="number"
+                android:textColor="@color/color_6ace89"
+                android:hint="请输入联系电话"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:padding="@dimen/dimen_15"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_200"
+        android:background="@drawable/shape_white_4_grey"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_15sp"
+            android:textColor="@color/text_575757"
+            android:text="公司描述："/>
+
+        <EditText
+            android:textCursorDrawable="@drawable/shape_cursor_bg"
+            android:maxLength="200"
+            android:id="@+id/edt_describe"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="top"
+            android:textSize="@dimen/text_15sp"
+            android:textColor="@color/color_333333"
+            android:hint="请填写公司描述"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/dimen_50"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:id="@+id/tv_save"
+            android:enabled="false"
+            android:layout_alignParentBottom="true"
+            android:textSize="@dimen/text_20sp"
+            android:textColor="@color/white"
+            android:text="保存"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:background="@drawable/select_button_enable"/>
+    </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

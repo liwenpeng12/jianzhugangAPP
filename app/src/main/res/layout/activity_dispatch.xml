@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_f2f2f2"
+    tools:context="com.jlkg.jzg.jzg_android.personal.activity.DispatchActivity">
+
+
+    <com.jlkg.jzg.jzg_android.weidget.MyToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tl:titleText="调度中心"
+        tl:leftImg="@mipmap/nav_icon_back">
+    </com.jlkg.jzg.jzg_android.weidget.MyToolbar>
+
+
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/st_work_orders"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:background="@color/theme_white"
+        android:paddingLeft="@dimen/dimen_15"
+        android:paddingRight="@dimen/dimen_15"
+        tl:tl_tab_padding="@dimen/dimen_5"
+        tl:tl_tab_space_equal="true"
+        tl:tl_textSelectColor="@color/color_039aff"
+        tl:tl_textUnselectColor="@color/color_333333"
+        tl:tl_indicator_height="3dp"
+        tl:tl_indicator_width="@dimen/dimen_65"
+        tl:tl_indicator_color="@color/color_039aff"
+        tl:tl_textAllCaps="false"
+        tl:tl_textsize="@dimen/text_16sp">
+    </com.flyco.tablayout.SlidingTabLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pager_content">
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

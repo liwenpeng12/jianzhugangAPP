@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jlkg.jzg.jzg_android.home.activitys.CompanyListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@drawable/d_title_bg"
+        android:fitsSystemWindows="true"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/ib_back"
+            style="@style/Widget.AppCompat.Toolbar.Button.Navigation"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/nav_icon_back" />
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/shape_radius_white"
+            android:drawableLeft="@mipmap/icon_search_small"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:hint="搜索公司"
+            android:paddingLeft="16dp"
+            android:textColor="@color/text_9b9b9b"
+            android:textSize="@dimen/text_14sp" />
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingRight="20dp"
+        app:tabIndicatorColor="@color/text_blue"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/text_blue"
+        app:tabTextColor="@color/text_333333" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/d_title_bg"
+            android:text="公司申请入驻"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_18sp" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/btn_bottom" />
+    </RelativeLayout>
+</LinearLayout>

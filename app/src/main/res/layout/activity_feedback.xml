@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jlkg.jzg.jzg_android.personal.activity.FeedbackActivity">
+
+
+    <com.jlkg.jzg.jzg_android.weidget.MyToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="意见反馈"
+        app:leftImg="@mipmap/nav_icon_back">
+    </com.jlkg.jzg.jzg_android.weidget.MyToolbar>
+
+    <EditText
+        android:textCursorDrawable="@drawable/shape_cursor_bg"
+        android:id="@+id/tv_content"
+        android:padding="@dimen/dimen_15"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_200"
+        android:background="@color/white"
+        android:gravity="top"
+        android:maxLength="200"
+        android:textSize="@dimen/text_15sp"
+        android:textColor="@color/color_333333"
+        android:hint="请输入您的建议"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0.5"
+        android:background="@color/color_c8c8c8"/>
+
+
+    <TextView
+        android:enabled="false"
+        android:id="@+id/tv_complete"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dimen_50"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:layout_marginRight="@dimen/dimen_20"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:textSize="@dimen/text_18sp"
+        android:textColor="@color/white"
+        android:text="提交"
+        android:background="@drawable/select_button_enable"/>
+</LinearLayout>

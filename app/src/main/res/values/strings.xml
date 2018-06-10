@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">建筑港</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_select_role">SelectRoleActivity</string>
+    <string name="title_activity_setting02">Setting02Activity</string>
+</resources>

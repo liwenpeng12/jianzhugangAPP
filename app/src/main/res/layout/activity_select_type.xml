@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jlkg.jzg.jzg_android.release.activitys.SelectTypeActivity">
+
+    <com.jlkg.jzg.jzg_android.weidget.MyToolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftImg="@drawable/ic_back"
+        app:titleText="选择班组" />
+
+    <Button
+        android:id="@+id/btn_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/d_title_bg"
+        android:enabled="false"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_18sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_bottom"
+        android:layout_below="@id/my_toolbar" />
+</RelativeLayout>

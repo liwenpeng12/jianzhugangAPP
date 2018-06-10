@@ -1,0 +1,45 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000"
+    android:clickable="true"
+    tools:context="com.jlkg.jzg.jzg_android.release.ReleaseFragment">
+
+    <TextView
+        android:id="@+id/tv_fabu_zhaogong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="60dp"
+        android:drawablePadding="10dp"
+        android:drawableTop="@mipmap/icon_fabuzhaogong"
+        android:gravity="center"
+        android:text="发布招工"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_14sp" />
+
+    <TextView
+        android:id="@+id/tv_fabu_zhaozhu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="100dp"
+        android:layout_marginRight="60dp"
+        android:drawablePadding="10dp"
+        android:drawableTop="@mipmap/icon_fabuzhaozu"
+        android:gravity="center"
+        android:text="发布招租"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_14sp" />
+
+    <ImageView
+        android:id="@+id/iv_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/tab_icon_close_defalut" />
+</FrameLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="beforeDescendants"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@id/tv_cancel"
+        android:background="@drawable/shape_radius_white"
+        android:drawableLeft="@mipmap/icon_search_small"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:hint="搜索班组"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:singleLine="true"
+        android:textColor="@color/text_9b9b9b"
+        android:textSize="@dimen/text_14sp" />
+
+    <LinearLayout
+        android:id="@+id/lin_caozuo"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/fl_caozuo"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_radius_yellow">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="4dp"
+                android:drawableRight="@mipmap/content_icon_enter"
+                android:text="操作规范"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_16sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_gongyi"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_radius_green">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="4dp"
+                android:drawableRight="@mipmap/content_icon_enter"
+                android:text="工艺规范"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_16sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_zhiliang"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_radius_blue">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="4dp"
+                android:drawableRight="@mipmap/content_icon_enter"
+                android:text="质量标准"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_16sp" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/white"
+        android:drawableLeft="@mipmap/content_icon_commonder"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:text="班组负责人"
+        android:textColor="@color/text_333333"
+        android:textSize="@dimen/text_16sp" />
+</LinearLayout>

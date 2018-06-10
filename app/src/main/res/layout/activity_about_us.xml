@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jlkg.jzg.jzg_android.personal.activity.AboutUsActivity">
+
+    <com.jlkg.jzg.jzg_android.weidget.MyToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="关于我们"
+        app:leftImg="@mipmap/nav_icon_back">
+    </com.jlkg.jzg.jzg_android.weidget.MyToolbar>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dimen_40"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@mipmap/logo"/>
+
+        <TextView
+            android:id="@+id/tv_user_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="5dp"
+            android:text="建筑港1.0.0"
+            android:textColor="@color/text_9b9b9b"
+            android:textSize="@dimen/text_14sp"
+            android:visibility="visible"/>
+    </LinearLayout>
+    <TextView
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tv_content"
+        android:paddingLeft="@dimen/dimen_15"
+        android:paddingRight="@dimen/dimen_15"
+        android:textSize="@dimen/text_16sp"
+        android:textColor="@color/color_333333"
+        android:text="\u3000\u3000中国建筑行业互联网第一平台，以劳务为切入点，逐渐完善了建筑劳务、建材商城、建筑培训、工程机械、调度指挥中心等布局构建行业生态链，致力于竖立行业标杆，引领行业方向，是深圳市政府创新中心重点引进和推广的明星企业项目。目前平台实名注册人员超70万，公司超过5000家，施工班组20000多个，构建有互联网平台三大中心：“大数据中心”、“人才中心”和“产业创新中心”，真正实现了实体+互联网、数字+互联网、工业+互联网的大型互联网平台。"/>
+   <TextView
+       android:layout_marginBottom="@dimen/dimen_15"
+       android:gravity="center_horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:textSize="@dimen/text_14sp"
+       android:textColor="@color/color_888888"
+       android:text="深圳建筑港公司版权\n版权信息"/>
+</LinearLayout>

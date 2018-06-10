@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/theme_white"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_reason1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:background="@color/theme_fore_bg"-->
+        <!--android:gravity="center"-->
+        <!--android:text="无法联系用户"-->
+        <!--android:textColor="@color/color_444444"-->
+        <!--android:textSize="@dimen/theme_text_16"-->
+        <!--/>-->
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0.5dp"-->
+        <!--android:background="#d7d7d7" />-->
+    <!--<TextView-->
+        <!--android:id="@+id/tv_reason2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:background="@color/theme_fore_bg"-->
+        <!--android:gravity="center"-->
+        <!--android:text="用户放弃维修"-->
+        <!--android:textColor="@color/color_444444"-->
+        <!--android:textSize="@dimen/theme_text_16"-->
+        <!--/>-->
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0.5dp"-->
+        <!--android:background="#d7d7d7" />-->
+
+    <!--<TextView-->
+        <!--android:textColor="@color/color_444444"-->
+        <!--android:text="其他"-->
+        <!--android:textSize="@dimen/theme_text_16"-->
+        <!--android:id="@+id/tv_reason_other"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:background="@color/theme_fore_bg"-->
+        <!--android:gravity="center"-->
+        <!--/>-->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView
+            android:background="@color/theme_white"
+            android:id="@+id/rv_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_10"
+            android:background="#f4f4f4" />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:background="@color/theme_fore_bg"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/color_9c9c9c"
+            android:textSize="@dimen/text_16sp"
+            />
+
+    </LinearLayout>
+
+
+</ScrollView>

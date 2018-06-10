@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jlkg.jzg.jzg_android.personal.fragment.EmptyFragment">
+
+
+    <LinearLayout
+        android:paddingBottom="@dimen/dimen_50"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_125"
+            android:src="@mipmap/empty_result"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/dimen_20"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_16sp"
+            android:textColor="@color/text_575757"
+            android:text="正在开发中"/>
+
+    </LinearLayout>
+</RelativeLayout>
